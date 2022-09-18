@@ -3,7 +3,7 @@
 #include<stdlib.h>
 #include<ctype.h>
 void spilt_number(int * arr,int *array_size),spilt_number_while_adding(int *arr,int *l_var1,int *size);
-void string_lower(char *name),remove_space_in_string(char *string),print(int *arr,char *string_1,char *string_2);
+void remove_space_in_string(char *string),print(int *arr,char *string_1,char *string_2);
 int main ()
 { printf("WELCOME TO LOVE CALCULATOR\n");
     char string_1[30],string_2[30];
@@ -17,7 +17,7 @@ int main ()
     strcat(name,love);
     strcat(name,string_2);
     remove_space_in_string(name);
-    string_lower(name);
+    strlwr(name);
     int l_var1,l_var2,*arr,array_size=0;
     arr=(int*)calloc(1,sizeof(int));
     for(l_var1=0; name[l_var1]!='\0'; l_var1++) {//traverse the string for storing count of repeating/single letters
@@ -79,10 +79,6 @@ void spilt_number_while_adding(int *arr,int *l_var1,int *size){
                 (*l_var1)++;
              (*size)++;
             }
-void string_lower(char *name){
-    for(int l_var1=0;name[l_var1]!='\0';l_var1++)
-    name[l_var1]=tolower(name[l_var1]);
-}
 void remove_space_in_string(char *string){
     int count=0;
     for(int i=0;string[i]!='\0';i++){
