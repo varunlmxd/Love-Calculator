@@ -92,7 +92,7 @@ void print(int *a,char *string_1,char *string_2){
                               printf("  ████     ████\n");                              
                               printf("██▒▒▒▒█████▒▒▒▒██\n");                            
                               printf("██▒▒▒▒▒▒▒▒▒▒▒▒▒██\n");                            
-/*printf("%s",string_1);*/    printf("██▒▒▒▒▒▒▒▒▒▒▒▒▒██\n");                            
+                              printf("██▒▒▒▒▒▒▒▒▒▒▒▒▒██\n");                            
                               printf("  ██▒▒ %d%% ▒▒██\n",a[0]);                              
                               printf("    ██▒▒▒▒▒██\n");                                
                               printf("      █▒▒▒█\n");
